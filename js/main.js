@@ -6,7 +6,7 @@ const closeBtn = document.querySelector('.closeBtn');
 const ul = document.querySelector('ul');
 
 const showImages = () => {
-  fetch('kuvat.json').then((response) => {
+  fetch('model/getImages.php').then((response) => {
     return response.json();
   }).then((json) => {
     let html = '';
